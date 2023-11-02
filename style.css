@@ -40,6 +40,7 @@ body{
 
 /* Header */
 .header{
+    background-image: url("./images/navbar-background.png");
 	background-color: #4a4a4a;
 	position: sticky;
     top: 110px;
@@ -80,6 +81,7 @@ body{
 /* Main */
 body{
 	background-color: #ffffff;
+    background-image: url(./images/background.jpg);
 }
 *{
 	padding: 0;
@@ -88,17 +90,13 @@ body{
 }
 
 /* Footer */
-.footer1{
-	background:#2D3335;
-	height:250px;
-}
 .footer2{
 	background:#292929;
+    position: relative;
 	padding:25px;
 	text-align:center;
 	color:#FFFFFF;
 }
-.kolom-footer{
-	height:250px;
-	color:#fd0000;
+.social-media{
+    color: white;
 }
