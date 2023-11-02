@@ -40,18 +40,16 @@ body{
 
 /* Header */
 .header{
-    background-image: url("./images/navbar-background.png");
-	background-color: #4a4a4a;
-	position: sticky;
-    top: 110px;
-    height: auto;
-    min-width: 210px;
-    max-width: 210px;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    order: 1;
+    height: 100%;
+  	width: 160px;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #111;
+	background-image: url("./images/navbar-background.png");
+  	overflow-x: hidden;
+  	padding-top: 20px;
 }
 .home-style{
 	float:left;
@@ -92,7 +90,6 @@ body{
 /* Footer */
 .footer2{
 	background:#292929;
-    position: relative;
 	padding:25px;
 	text-align:center;
 	color:#FFFFFF;
