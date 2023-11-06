@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 body{
 	margin:0 0 0 0;
 	font-family:calibri;
@@ -17,7 +18,6 @@ body{
 [class*="col-"] {
   float: left;
   padding: 15px;
-
 }
 
 .col-1 {width: 8.33%;}
@@ -33,13 +33,9 @@ body{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.container{
-	width:100%;
-	margin:0 auto;
-}
-
 /* Header */
 h1{
+  margin-bottom: 25px;
   text-align: center;
   color: #ffffff;
 }
@@ -47,6 +43,7 @@ h2{
   text-align: center;
   color: #ffffff;
 }
+
 /* Style the side navigation */
 .side-navbar {
   height: 100%;
@@ -59,6 +56,16 @@ h2{
   background-color: #111;
   background-image: url("./images/navbar-background.png");
   overflow-x: hidden;
+}
+.content {
+  margin-left: 200px;
+}
+
+.order-style{
+	padding:5px 15px;
+	text-decoration:none;
+	color:#fff;
+  font-family: VERDANA;
 }
   
 /* Side navigation links */
@@ -76,16 +83,9 @@ h2{
 }
   
 /* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
-}
-
-.order-style{
-	padding:5px 15px;
-	text-decoration:none;
-	color:#fff;
-  font-family: VERDANA;
+.image-grid{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
 }
 
 /* Main */
@@ -93,24 +93,27 @@ body{
 	background-color: #ffffff;
   background-image: url(./images/background.jpg);
 }
-.image{
-	height: 350px;
-	background-image: url(imageweb.jpg);
-	background-size: cover;
-	background-position: 0 -230px;
-}
 
 /* Footer */
 .footer2{
-  position: sticky;
-	background:#292929;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #363434;
 	padding:25px;
-	text-align:center;
 	color:#FFFFFF;
+  text-align: center;
 }
 
-.facebook .instagram .mail{
-    color: white;
+.facebook{
+  color: white;
+}
+
+.instagram{
+color: white;
+}
+
+.mail{
+color: white;
 }
 
 /*micro clearfix*/
