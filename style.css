@@ -70,9 +70,9 @@ h2{
   }
   
   /* Change color on hover */
-  .side-navbar a:hover {
+  .col-8 a:hover {
     background-color: #ddd;
-    color: black;
+    color: white;
   }
   
   /* Style the content */
