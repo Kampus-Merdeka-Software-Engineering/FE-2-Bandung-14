@@ -40,76 +40,58 @@ body{
 
 /* Header */
 h1{
-    text-align: center;
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 h2{
-    text-align: center;
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 /* Style the side navigation */
 .side-navbar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-color: #111;
-    background-image: url("./images/navbar-background.png");
-    overflow-x: hidden;
-  }
-  
-  /* Side navigation links */
-  .side-navbar a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color on hover */
-  .col-8 a:hover {
-    background-color: #ddd;
-    color: white;
-  }
-  
-  /* Style the content */
-  .content {
-    margin-left: 200px;
-    padding-left: 20px;
-  }
-
-/* .home-style{
-	float:left;
-	padding:5px 15px;
-	text-decoration:none;
-	color:#fff;
-	font-family: VERDANA;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-color: #111;
+  background-image: url("./images/navbar-background.png");
+  overflow-x: hidden;
 }
-.menu-style{
-	float:left;
-	padding:5px 15px;
-	text-decoration:none;
-	color:#fff;
-	font-family: VERDANA;
+  
+/* Side navigation links */
+.side-navbar a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
 }
-.menu-style:hover{
-	color: #2E8B57;
+  
+/* Change color on hover */
+.col-8 a:hover {
+  background-color: #ddd;
+  color: white;
+}
+  
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
 
-}  */
 .order-style{
 	padding:5px 15px;
 	text-decoration:none;
 	color:#fff;
-    font-family: VERDANA;
+  font-family: VERDANA;
 }
 
 /* Main */
 body{
 	background-color: #ffffff;
-    background-image: url(./images/background.jpg);
+  background-image: url(./images/background.jpg);
 }
 .image{
 	height: 350px;
@@ -117,24 +99,16 @@ body{
 	background-size: cover;
 	background-position: 0 -230px;
 }
-*{
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-}
 
 /* Footer */
-
 .footer2{
+  position: sticky;
 	background:#292929;
 	padding:25px;
 	text-align:center;
 	color:#FFFFFF;
 }
-.name{
-    border-right: solid;
-    border-width: 1px;
-}
+
 .facebook .instagram .mail{
     color: white;
 }
@@ -142,10 +116,10 @@ body{
 /*micro clearfix*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
