@@ -105,6 +105,26 @@ section h2 {
   margin-bottom: 10px;
 }
 
+/* Style the main-image details */
+.main-images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the about details */
+.about {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.lorem {
+  text-align: justify;
+}
+
 /* Style the room details */
 .room {
   border: 1px solid #ccc;
