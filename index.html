@@ -1,54 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sepuh Resort Glamping</title>
-<link href="style.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sepuh Resort Glamping</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<section id="side-navbar">
-    <div class="side-navbar">
-        <div class="logo">
-            <a href="?" class="home-style">Sepuh Resort Glamping</a>
-        </div>
-        <div class="col-8">
-            <a href="?" class="menu-style">Room</a>
-            <a href="?" class="menu-style">Eat & Drink</a>
-            <a href="?" class="menu-style">Gallery</a>
-            <a href="?" class="menu-style">Event</a>
-            <a href="?" class="menu-style">Contact</a>
-            <br><br>
-            <button href="?" class="order-style">Order Now</button>
-        </div>
-    </div>
-</section>
-</body>
-<body>
-    <section id="content">
+    <div class="container">
+        <nav class="sidebar">
+            <home>
+                <h1>Sepuh Resort Glamping</h1>
+            </home>
+            <ul>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#eat&drink">Eat & Drink</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button type="submit">Order Now</button>
+        </nav>
+
         <div class="content">
-            <h1>PUH HOTEL</h1>
-            <h2>Lorem Ipsum Slebew Jjsbdb</h2>
-            <div class="images">
-                <img src="images/main-image1.png" alt="image1">
-                <img src="images/main-image2.png" alt="image2">
-                <img src="images/main-image3.png" alt="image3">
-                <img src="images/main-image4.png" alt="image4">
-            </div>
-            <section id="footer">
-                <div class="footer2">
-                    <a class="name">Resort Glamping</a>
-                    <a class="find">
-                        Find Us On:
-                        <i class="fa fa-instagram" style="font-size:36px" alt="Instagram"></i>
-                        <i class="fa fa-facebook-f" style="font-size:36px" alt="Facebook"></i>
-                        <i class="fa fa-envelope" style="font-size:36px" alt="Mail"></i>
-                    </a>
-                    <a class="location">530-831-143 
-                        <br>Jln. Doang Jadian Kaga, Bandung</a>
+            <header>
+                <h1>PUH HOTEL</h1>
+                <h2>Lorem Ipsum Slebew Jjsbdb</h2>
+            </header>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to My Hotel, your home away from home. We offer comfortable accommodations and a warm, friendly atmosphere for your stay.</p>
+            </section>
+
+            <section id="rooms">
+                <h2>Rooms</h2>
+                <div class="room">
+                    <img src="room1.jpg" alt="Room 1">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious and luxurious, our deluxe rooms provide a comfortable stay with all modern amenities.</p>
+                </div>
+                <div class="room">
+                    <img src="room2.jpg" alt="Room 2">
+                    <h3>Executive Suite</h3>
+                    <p>Experience luxury in our executive suite, featuring stunning views and extra amenities.</p>
                 </div>
             </section>
-    </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to make a reservation, please contact us at info@myhotel.com or call us at +1-123-456-7890.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Hotel</p>
+    </footer>
 </body>
 </html>
