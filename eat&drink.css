@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color to the body */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Create a grid layout */
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "sidebar content";
+    grid-gap: 20px;
+  }
+  
+  /* Style the sidebar (navbar) */
+  .sidebar {
+    height: 100%;
+    width: 180px;
+    grid-area: sidebar;
+    background-image: url(./images/navbar-background.png);
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar li:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+  .sidebar h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .sidebar button {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px 12px;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    background-position: 100% center;
+    background-size: 10px;
+    font-size: 0.9375em;
+    cursor: pointer;
+    overflow: visible;
+    margin-top: 15px;
+  }
+  
+  /* Style the content area */
+  .content {
+    grid-area: content;
+  }
+  
+  /* Style the main content sections */
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Style the about details */
+  .about {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .lorem {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  /* Style the breakfast details */
+  .breakfast {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .breakfast img {
+    max-width: 450px;
+    margin-right: 20px;
+  }
+  
+  /* Style the decks&common details */
+  .decks-common-area p{
+    margin-bottom: 10px;
+  }
+
+  /* Style the footer as a horizontal grid with 3 columns */
+  footer {
+    background-image: url(./images/background.jpg);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  
+  /* Style each column in the footer */
+  .footer-column {
+    padding: 0 10px; /* Adjust the padding as needed */
+    border-right: 1px solid #555; /* Add a border between columns */
+  }
+  
+  /* Remove the border from the last column */
+  .footer-column:last-child {
+    border-right: none;
+  }
