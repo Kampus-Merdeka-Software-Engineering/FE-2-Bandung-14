@@ -145,6 +145,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
+  
+  
 }
 
 footer .copy {
@@ -157,6 +159,7 @@ footer .copy {
 .footer-column {
   padding: 0 10px; /* Adjust the padding as needed */
   border-right: 1px solid #555; /* Add a border between columns */
+  
 }
 
 /* Remove the border from the last column */
