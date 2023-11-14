@@ -23,7 +23,7 @@ body, h1, h2, p, ul, li {
   /* Style the sidebar (navbar) */
   .sidebar {
     height: 100%;
-    width: 150px;
+    width: 180px;
     grid-area: sidebar;
     background-image: url(./images/navbar-background.png);
     background-size: cover;
@@ -66,7 +66,7 @@ body, h1, h2, p, ul, li {
     text-align: center;
     background-repeat: no-repeat;
     background-color: #333;
-    background-position: 95% center;
+    background-position: 100% center;
     background-size: 10px;
     font-size: 0.9375em;
     cursor: pointer;
@@ -99,31 +99,48 @@ body, h1, h2, p, ul, li {
   }
 
   .lorem {
+    margin-top: 20px;
     text-align: justify;
   }
   
-  /* Style the room details */
-  .room {
-    border: 1px solid #ccc;
+  /* Style the breakfast details */
+  .breakfast {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    align-items: center;
+    text-align: justify;
     padding: 10px;
     margin: 10px;
   }
   
-  .room img {
-    max-width: 100%;
+  .breakfast img {
+    max-width: 450px;
+    margin-right: 20px;
   }
   
+  /* Style the decks&common details */
+  .decks-common-area p{
+    margin-bottom: 10px;
+  }
+
   /* Style the footer as a horizontal grid with 3 columns */
   footer {
-    background-color: #333;
     background-image: url(./images/background.jpg);
+    background-color: #333;
     color: #fff;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
   }
   
-  footer p {
-    grid-column: span 3;
+  /* Style each column in the footer */
+  .footer-column {
+    padding: 0 10px; /* Adjust the padding as needed */
+    border-right: 1px solid #555; /* Add a border between columns */
+  }
+  
+  /* Remove the border from the last column */
+  .footer-column:last-child {
+    border-right: none;
   }
