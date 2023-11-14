@@ -61,3 +61,11 @@ h6{
   font-family: "Times New Roman", Times, serif;
   font-weight: 200;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
