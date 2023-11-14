@@ -145,14 +145,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
-  
-  
-}
-
-footer .copy {
-  text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
 }
 
 /* Style each column in the footer */
