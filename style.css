@@ -147,21 +147,10 @@ footer {
   padding: 10px;
 }
 
-footer p {
-  grid-column: span 3;
-}
-
-footer .copy {
-  text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
-}
-
 /* Style each column in the footer */
 .footer-column {
   padding: 0 10px; /* Adjust the padding as needed */
   border-right: 1px solid #555; /* Add a border between columns */
-  
 }
 
 /* Remove the border from the last column */
