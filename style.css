@@ -145,35 +145,15 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
-<<<<<<< HEAD
-}
-
-footer p {
-  grid-column: span 3;
-}
-
-
-
-=======
-  
-  
-}
-
-footer .copy {
-  text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
 }
 
 /* Style each column in the footer */
 .footer-column {
   padding: 0 10px; /* Adjust the padding as needed */
   border-right: 1px solid #555; /* Add a border between columns */
-  
 }
 
 /* Remove the border from the last column */
 .footer-column:last-child {
   border-right: none;
 }
->>>>>>> d275a4bdf21d121122ccdd6d3989ad0217901a4c
