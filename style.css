@@ -145,6 +145,16 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
+<<<<<<< HEAD
+}
+
+footer p {
+  grid-column: span 3;
+}
+
+
+
+=======
   
   
 }
@@ -166,3 +176,4 @@ footer .copy {
 .footer-column:last-child {
   border-right: none;
 }
+>>>>>>> d275a4bdf21d121122ccdd6d3989ad0217901a4c
