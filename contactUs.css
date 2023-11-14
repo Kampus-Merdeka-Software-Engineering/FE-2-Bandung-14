@@ -60,4 +60,16 @@ h4{
 h6{
   font-family: "Times New Roman", Times, serif;
   font-weight: 200;
+<<<<<<< HEAD
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+=======
+}
+>>>>>>> d275a4bdf21d121122ccdd6d3989ad0217901a4c
