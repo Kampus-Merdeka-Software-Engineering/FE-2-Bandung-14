@@ -33,7 +33,7 @@
     height: 100%;
     width: 180px;
     grid-area: sidebar;
-    background-image: url(./images/navbar-background.png);
+    background-image: url(../images/navbar-background.png);
     background-size: cover;
     background-color: #333;
     color: #fff;
@@ -181,7 +181,7 @@
 footer {
     /* position: relative; */
     /* bottom: 0; */
-    background-image: url(./images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-color: #333;
     color: #ffffff;
     text-align: center;
