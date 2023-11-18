@@ -37,13 +37,13 @@ body {
   list-style: none;
 }
 
-.sidebar li {
-  margin-bottom: 10px;
-}
-
 .sidebar a {
   color: #fff;
   text-decoration: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
 }
 
 .sidebar li:hover {
