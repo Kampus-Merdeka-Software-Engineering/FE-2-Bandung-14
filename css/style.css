@@ -157,7 +157,6 @@ footer {
 
 /* Style each column in the footer */
 .footer-column {
-  /* flex: 1; */
   padding: 0 10px;
   border-right: 1px solid #555;
 }
