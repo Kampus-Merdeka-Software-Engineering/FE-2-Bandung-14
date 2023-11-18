@@ -12,8 +12,7 @@
   
   /* Apply a background color to the body */
   body {
-    background-color: #ffffff;
-    background-image: url(./images/17580.jpg);
+    background-image: url(../images/17580.jpg);
     font-family: Arial, sans-serif;
     background-size: cover;
     background-attachment: fixed;
