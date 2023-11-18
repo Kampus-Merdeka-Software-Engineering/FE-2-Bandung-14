@@ -68,18 +68,23 @@
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     width: 100%;
-    padding: 0px 12px;
-    border-radius: 0;
+    padding: 12px;
+    border-radius: 4px;
     border: 1px solid #ffffff;
     text-align: center;
     background-repeat: no-repeat;
-    background-color: #333;
+    background-color: #61A4C9;
     background-position: 95% center;
     background-size: 10px;
     font-size: 0.9375em;
     cursor: pointer;
     overflow: visible;
     margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background-color: #ddd;
   }
   
   
