@@ -33,13 +33,19 @@ body {
   position: fixed;
 }
 
-.sidebar ul {
-  list-style: none;
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .sidebar a {
   color: #fff;
   text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 20px;
 }
 
 .sidebar li {
@@ -51,11 +57,6 @@ body {
   color: white;
 }
 
-.sidebar h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
 .sidebar button {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -64,14 +65,9 @@ body {
   border-radius: 4px;
   border: 1px solid #ffffff;
   text-align: center;
-  background-repeat: no-repeat;
   background-color: #61A4C9;
-  background-position: 95% center;
-  background-size: 10px;
   font-size: 0.9375em;
   cursor: pointer;
-  overflow: visible;
-  margin-top: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -87,10 +83,14 @@ body {
 /* Style the header */
 header {
   background-color: #fff;
-  /* background-image: url(./images/background.jpg); */
   color: #333;
   text-align: center;
   padding: 20px;
+}
+
+header .header-text {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -112,11 +112,14 @@ section h2 {
 
 /* Style the main-image details */
 .main-images {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-images img {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 /* Style the about details */
@@ -147,15 +150,16 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
 }
 
 /* Style each column in the footer */
 .footer-column {
-  padding: 0 10px; /* Adjust the padding as needed */
-  border-right: 1px solid #555; /* Add a border between columns */
+  /* flex: 1; */
+  padding: 0 10px;
+  border-right: 1px solid #555;
 }
 
 /* Remove the border from the last column */
