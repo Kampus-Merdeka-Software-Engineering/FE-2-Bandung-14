@@ -81,9 +81,9 @@ body {
 
 /* Style the header */
 header {
-  background-color: #333;
-  background-image: url(./images/background.jpg);
-  color: #fff;
+  background-color: #fff;
+  /* background-image: url(./images/background.jpg); */
+  color: #333;
   text-align: center;
   padding: 20px;
 }
@@ -115,7 +115,7 @@ section h2 {
 }
 
 /* Style the about details */
-.about {
+.main {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
