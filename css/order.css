@@ -13,7 +13,7 @@ body, h1, h2, p, ul, li {
 /* Apply a background color to the body */
 body {
   background-color: #ffffff;
-  background-image: url(./images/17580.jpg);
+  background-image: url(../images/17580.jpg);
   font-family: Arial, sans-serif;
   background-size: cover;
   background-attachment: fixed;
@@ -33,7 +33,7 @@ body {
   height: 100%;
   width: 180px;
   grid-area: sidebar;
-  background-image: url(./images/navbar-background.png);
+  background-image: url(../images/navbar-background.png);
   background-size: cover;
   background-color: #333;
   color: #fff;
@@ -50,6 +50,7 @@ body {
 }
 
 .sidebar a {
+  display: block;
   color: #fff;
   text-decoration: none;
 }
@@ -65,21 +66,27 @@ body {
 }
 
 .sidebar button {
+  display: block;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   width: 100%;
-  padding: 0px 12px;
-  border-radius: 0;
+  padding: 12px;
+  border-radius: 4px;
   border: 1px solid #ffffff;
   text-align: center;
   background-repeat: no-repeat;
-  background-color: #333;
+  background-color: #61A4C9;
   background-position: 95% center;
   background-size: 10px;
   font-size: 0.9375em;
   cursor: pointer;
   overflow: visible;
   margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #ddd;
 }
 
 
@@ -232,7 +239,7 @@ header h1 {
 footer {
   /* position: relative; */
   /* bottom: 0; */
-  background-image: url(./images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-color: #333;
   color: #ffffff;
   text-align: center;
