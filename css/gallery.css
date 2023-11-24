@@ -154,30 +154,7 @@ body, h1, h2, p, ul, li {
   .lorem {
     text-align: justify;
   }
-  
-  /* Style the footer as a horizontal grid with 3 columns */
-  footer {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-  }
-  
-  /* Style each column in the footer */
-  .footer-column {
-    padding: 0 10px; /* Adjust the padding as needed */
-    border-right: 1px solid #555; /* Add a border between columns */
-  }
-  
-  /* Remove the border from the last column */
-  .footer-column:last-child {
-    border-right: none;
-  }
-  
+
   .mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
     position: absolute;
     top: 50%;
@@ -440,4 +417,27 @@ body, h1, h2, p, ul, li {
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  /* Style the footer as a horizontal grid with 3 columns */
+  footer {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  
+  /* Style each column in the footer */
+  .footer-column {
+    padding: 0 10px; /* Adjust the padding as needed */
+    border-right: 1px solid #555; /* Add a border between columns */
+  }
+  
+  /* Remove the border from the last column */
+  .footer-column:last-child {
+    border-right: none;
   }
