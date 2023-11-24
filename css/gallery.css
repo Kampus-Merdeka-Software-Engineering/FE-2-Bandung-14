@@ -159,6 +159,7 @@ body, h1, h2, p, ul, li {
   footer {
     background-image: url(../images/background.jpg);
     background-size: cover;
+    background-color: #333;
     color: #fff;
     text-align: center;
     display: grid;
@@ -439,49 +440,4 @@ body, h1, h2, p, ul, li {
   a {
     text-decoration: none;
     color: inherit;
-  }
-  
-  [id=footer] {
-    margin-top: 10vh;
-    padding: 10vh 0;
-    text-align: center;
-  }
-  
-  [id=footer] .container {
-    position: relative;
-  }
-  
-  [id=footer] .container:before, [id=footer] .container:after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 20px;
-    z-index: 10;
-    border-top: 2px solid;
-    width: 10%;
-    margin-bottom: 10vh;
-  }
-  
-  [id=footer] .container:after {
-    left: auto;
-    right: 20px;
-  }
-  
-  [id=footer] * {
-    display: block;
-  }
-  
-  [id=footer] * + * {
-    margin-top: 5vh;
-  }
-  
-  [id=footer] .logo {
-    font-weight: 600;
-    font-size: 1.5em;
-  }
-  
-  [id=footer] .copy {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
   }
