@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 180px;
     grid-area: sidebar;
-    background-image: url(navbar-background.png);
+    background-image: url(../images/navbar-background.png);
     background-size: cover;
     background-color: #333;
     color: #fff;
@@ -85,21 +85,6 @@ main {
     gap: 50px;
 }
 
-.content {
-    grid-area: content;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 #wedding {
     text-align: right;
 }
@@ -137,49 +122,9 @@ section h2 {
     transform: scale(1.1)
 }
 
-.content {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.desc {
-    flex: 1;
-    padding: 20px;
-}
-
-.decs h2 {
-    text-align: center;
-}
-
-.decs p {
-    text-align: justify;
-}
-
-
 img{
     width: 100%;
 }
-
-footer {
-    background-image: url("image event\background.jpg");
-    color: #fff;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-}
-footer .copyright{
-    align-items: end;
-}
-.footer-column {
-    padding: 0 10px; 
-    border-right: 1px solid #555; 
-}
-  
-.footer-column:last-child {
-    border-right: none;
-}
-
 
 footer {
     background-image: url(../images/background.jpg);
@@ -193,3 +138,17 @@ footer {
     width: auto;
     height: auto;
 }
+/* footer .copyright{
+    align-items: end;
+} */
+.footer-column {
+    padding: 0 10px; 
+    border-right: 1px solid #555; 
+}
+  
+.footer-column:last-child {
+    border-right: none;
+}
+
+
+
