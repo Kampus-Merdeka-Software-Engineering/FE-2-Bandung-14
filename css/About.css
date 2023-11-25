@@ -8,6 +8,8 @@ body, h1, h2, p, ul, li {
   
   /* Apply a background color to the body */
   body {
+    background-image: url(../images/17580.jpg);
+    background-size: cover;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
   }
@@ -33,11 +35,6 @@ body, h1, h2, p, ul, li {
     position: fixed;
   }
   
-  .sidebar .logo {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
   .sidebar a {
     display: block;
     color: #fff;
@@ -46,7 +43,6 @@ body, h1, h2, p, ul, li {
   
   .sidebar ul {
     list-style: none;
-    margin-bottom: 20px;
   }
   
   .sidebar li {
@@ -58,6 +54,11 @@ body, h1, h2, p, ul, li {
     color: white;
   }
   
+  .sidebar h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
   .sidebar button {
     display: block;
     text-transform: uppercase;
@@ -67,9 +68,14 @@ body, h1, h2, p, ul, li {
     border-radius: 4px;
     border: 1px solid #ffffff;
     text-align: center;
+    background-repeat: no-repeat;
     background-color: #61A4C9;
+    background-position: 95% center;
+    background-size: 10px;
     font-size: 0.9375em;
     cursor: pointer;
+    overflow: visible;
+    margin-top: 15px;
     transition: background-color 0.3s ease;
   }
   
@@ -112,43 +118,10 @@ body, h1, h2, p, ul, li {
     margin-bottom: 10px;
   }
   
-  /* Style the main-image details */
-  .main-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .main-images img {
-    width: 30%;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the about details */
-  .main {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .lorem {
-    text-align: justify;
-  }
-  
-  /* Style the room details */
-  .room {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .room img {
-    max-width: 100%;
-  }
-  
   /* Style the footer as a horizontal grid with 3 columns */
   footer {
     background-image: url(../images/background.jpg);
+    background-size: cover;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -159,8 +132,8 @@ body, h1, h2, p, ul, li {
   
   /* Style each column in the footer */
   .footer-column {
-    padding: 0 10px;
-    border-right: 1px solid #555;
+    padding: 0 10px; /* Adjust the padding as needed */
+    border-right: 1px solid #555; /* Add a border between columns */
   }
   
   /* Remove the border from the last column */
