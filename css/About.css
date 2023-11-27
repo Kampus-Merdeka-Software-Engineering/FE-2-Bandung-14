@@ -132,7 +132,6 @@ body, h1, h2, p, ul, li {
   
   /* Style each column in the footer */
   .footer-column {
-    color: white;
     padding: 0 10px; /* Adjust the padding as needed */
     border-right: 1px solid #555; /* Add a border between columns */
   }
