@@ -1,142 +1,226 @@
-/* styles.css */
+/**** Sass Variables ****/
 
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'satisfy';
+  text-align: center;
+  background: #ffffff;
+}
+
+h1 {
+  font-family: 'satisfy';
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 60px;
+}
+
+.container {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 12px;
+  font-size: 15x;
+  line-height: 35px;
+}
+
+.job-title {
+  font-size: 15px;
+}
+
+.top-left {
+  grid-column: 1/2;
+}
+
+.top-right {
+  grid-column: 2/3;
+}
+
+.content {
+  grid-column: 3/4;
+}
+
+.bottom-left {
+  grid-column: 1/2;
+}
+
+.bottom-center {
+  grid-column: 2/3;
+}
+
+.bottom-right {
+  grid-column: 3/4;
+}
+
+.card-wrapper {
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: 60%;
+  left: 55%;
+  width: 250px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
   
-  /* Apply a background color to the body */
-  body {
-    background-image: url(../images/17580.jpg);
-    background-size: cover;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Create a grid layout */
-  .container {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-areas: "sidebar content";
-    grid-gap: 20px;
-  }
-  
-  /* Style the sidebar (navbar) */
-  .sidebar {
-    height: 100%;
-    width: 180px;
-    grid-area: sidebar;
-    background-image: url(../images/navbar-background.png);
-    background-size: cover;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar li:hover {
-    background-color: #ddd;
-    color: white;
-  }
-  
-  .sidebar h1 {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .sidebar button {
-    display: block;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
+  .card-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #ffffff;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+  }
+  
+  &:hover img {
+    opacity: 0.4;
+    transition: .5s;
+  }
+}
+
+.card:hover .card-image {
+  transform: translateY(-100px);
+  transition: all .9s;
+}
+
+/**** Social Icons *****/
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  
+  li {
+    list-style: none;
+    
+    a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #fff;
+      font-size: 23px;
+      color: #333;
+      font-weight: bold;
+      margin: 0 6px;
+      transition: .4s;
+      transform: translateY(200px);
+      opacity: 0;
+    } 
+  }
+}
+
+.card:hover .social-icons li a {
+  transform: translateY(0px);
+  opacity: 1; 
+}
+
+.social-icons li a:hover {
+  background: #000;
+  transition: .2s;
+  .fab {
+    color: #fff;
+  } 
+}
+
+.social-icons li a .fab {
+  transition: .8s;
+    
+  &:hover {
+      transform: rotateY(360deg);
+      color: #fff;
+  } 
+}
+
+.card:hover li:nth-child(1) a {
+  transition-delay: 0.1s;
+}
+.card:hover li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+.card:hover li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+.card:hover li:nth-child(4) a {
+  transition-delay: 0.4s;
+}
+
+/**** Personal Details ****/
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  padding: 30px;
+
+  h2 {
+    margin: 30px 0;
+    padding: 0;
     text-align: center;
-    background-repeat: no-repeat;
-    background-color: #61A4C9;
-    background-position: 95% center;
-    background-size: 10px;
-    font-size: 0.9375em;
-    cursor: pointer;
-    overflow: visible;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
+     
+    .job-title {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        color: #333;
+        font-weight: 300;
+    }
   }
-  
-  .sidebar button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Style the content area */
-  .content {
-    grid-area: content;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  header .header-text {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  header h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-  
-  /* Style the main content sections */
-  section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the footer as a horizontal grid with 3 columns */
-  footer {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  /* Style each column in the footer */
-  .footer-column {
-    padding: 0 10px; /* Adjust the padding as needed */
-    border-right: 1px solid #555; /* Add a border between columns */
-  }
-  
-  /* Remove the border from the last column */
-  .footer-column:last-child {
-    border-right: none;
-  }  
+}
+
+.jane {
+  position: relative;
+  bottom: -120px;
+  left: 0;
+  opacity: 0;
+  background: #fff;
+  width: 100%;
+  height: 120px;
+  z-index: 3;
+  padding: 10px;
+  transition: .4s;
+}
+
+.profile-two .social-icons li a {
+  border-radius: 50%;
+}
+
+.card:hover .profile-image--two {
+  transform: rotateY(180deg);
+}
+
+.card:hover .jane {
+  bottom: 0;
+  left: 0;
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+
