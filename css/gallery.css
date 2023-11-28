@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
@@ -10,6 +10,7 @@ body, h1, h2, p, ul, li {
   body {
     background-image: url(../images/17580.jpg);
     background-size: cover;
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
   }
   
