@@ -9,59 +9,74 @@
 body {
   font-family: 'satisfy';
   text-align: center;
+  background-image: url(../images/BG\ About.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  font-family: 'satisfy';
+  font-family: 'Titillium Web', sans-serif;
   font-size: 30px;
   text-align: center;
-  padding-top: 30px;
-  line-height: 60px;
+  padding-top: 90px;
   color: #000000;
 }
 
+.greeting {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: black;
+}
+
 .container {
-  margin-top: 5vh;
+  margin-top: 6vh;
   margin-bottom: 10vh;
   margin-left: 15vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
+  padding: 0;
   font-size: 15x;
 }
 
 .cell-2 {
   grid-column: 2/3;
+  padding: 0;
 }
 
 .cell-4 {
   grid-column: 1/2;
+  padding: 0;
 }
 
 .cell-5 {
   grid-column: 2/3;
+  padding: 0;
 }
 
 .cell-6 {
   grid-column: 3/4;
+  padding: 0;
 }
 
 .cell-7 {
   grid-column: 1/2;
+  padding: 0;
 }
 
 .cell-8 {
   grid-column: 2/3;
+  padding: 0;
 }
 
 .cell-9 {
   grid-column: 3/4;
+  padding: 0;
 }
 
 .card-wrapper {
   width: 250px;
-  height: 400px;
+  height: 350px;
   position: relative;
 }
 
@@ -126,7 +141,7 @@ ul.social-icons {
     text-align: center;
     font-size: 25px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0 15px;
     transition: .5s;
     transform: translateY(200px);
@@ -145,7 +160,7 @@ ul.social-icons li a:hover .fa-brands {
   transition: .2s;
 }
 
-.fa-mail .fa-instagram .fa-twitter .fa-linkedin {
+.fa-message .fa-instagram .fa-twitter .fa-linkedin {
   color: #fff;
 } 
 
