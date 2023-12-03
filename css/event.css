@@ -127,20 +127,15 @@ img{
 }
 
 footer {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
+    background-image: url("image event\background.jpg");
     background-color: #333;
-    color: #ffffff;
+    background-size: cover;
+    color: #fff;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
-    width: auto;
-    height: auto;
 }
-/* footer .copyright{
-    align-items: end;
-} */
 .footer-column {
     padding: 0 10px; 
     border-right: 1px solid #555; 
