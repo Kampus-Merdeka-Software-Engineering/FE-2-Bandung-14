@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
@@ -8,6 +8,8 @@ body, h1, h2, p, ul, li {
   
   /* Apply a background color to the body */
   body {
+    background-image: url(../images/17580.jpg);
+    background-size: cover;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
   }
@@ -25,7 +27,7 @@ body, h1, h2, p, ul, li {
     height: 100%;
     width: 180px;
     grid-area: sidebar;
-    background-image: url(./images/navbar-background.png);
+    background-image: url(../images/navbar-background.png);
     background-size: cover;
     background-color: #333;
     color: #fff;
@@ -42,6 +44,7 @@ body, h1, h2, p, ul, li {
   }
   
   .sidebar a {
+    display: block;
     color: #fff;
     text-decoration: none;
   }
@@ -57,21 +60,27 @@ body, h1, h2, p, ul, li {
   }
   
   .sidebar button {
+    display: block;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     width: 100%;
-    padding: 0px 12px;
-    border-radius: 0;
+    padding: 12px;
+    border-radius: 4px;
     border: 1px solid #ffffff;
     text-align: center;
     background-repeat: no-repeat;
-    background-color: #333;
+    background-color: #61A4C9;
     background-position: 95% center;
     background-size: 10px;
     font-size: 0.9375em;
     cursor: pointer;
     overflow: visible;
     margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background-color: #ddd;
   }
   
   /* Style the content area */
@@ -104,7 +113,7 @@ body, h1, h2, p, ul, li {
     color: #000;
   }
   
-  h4{
+  .EatandDrink h4{
     font-size: 25px;
     margin-bottom: 15px;
     padding-top: 50px;
@@ -146,29 +155,7 @@ body, h1, h2, p, ul, li {
   .lorem {
     text-align: justify;
   }
-  
-  /* Style the footer as a horizontal grid with 3 columns */
-  footer {
-    background-image: url(./images/background.jpg);
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-  }
-  
-  /* Style each column in the footer */
-  .footer-column {
-    padding: 0 10px; /* Adjust the padding as needed */
-    border-right: 1px solid #555; /* Add a border between columns */
-  }
-  
-  /* Remove the border from the last column */
-  .footer-column:last-child {
-    border-right: none;
-  }
-  
+
   .mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
     position: absolute;
     top: 50%;
@@ -432,48 +419,26 @@ body, h1, h2, p, ul, li {
     text-decoration: none;
     color: inherit;
   }
-  
-  [id=footer] {
-    margin-top: 10vh;
-    padding: 10vh 0;
-    text-align: center;
-  }
-  
-  [id=footer] .container {
-    position: relative;
-  }
-  
-  [id=footer] .container:before, [id=footer] .container:after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 20px;
-    z-index: 10;
-    border-top: 2px solid;
-    width: 10%;
-    margin-bottom: 10vh;
-  }
-  
-  [id=footer] .container:after {
-    left: auto;
-    right: 20px;
-  }
-  
-  [id=footer] * {
-    display: block;
-  }
-  
-  [id=footer] * + * {
-    margin-top: 5vh;
-  }
-  
-  [id=footer] .logo {
-    font-weight: 600;
-    font-size: 1.5em;
-  }
-  
-  [id=footer] .copy {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
-  }
+
+  /* Style the footer as a horizontal grid with 3 columns */
+footer {
+  background-image: url(../images/background.jpg);
+  background-color: #333;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Style each column in the footer */
+.footer-column {
+  padding: 0 10px;
+  border-right: 1px solid #555;
+}
+
+/* Remove the border from the last column */
+.footer-column:last-child {
+  border-right: none;
+}

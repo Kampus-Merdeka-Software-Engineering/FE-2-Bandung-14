@@ -25,7 +25,7 @@ body {
   height: 100%;
   width: 180px;
   grid-area: sidebar;
-  background-image: url(./images/navbar-background.png);
+  background-image: url(../images/navbar-background.png);
   background-size: cover;
   background-color: #333;
   color: #fff;
@@ -33,17 +33,24 @@ body {
   position: fixed;
 }
 
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
 .sidebar ul {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .sidebar li {
   margin-bottom: 10px;
-}
-
-.sidebar a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .sidebar li:hover {
@@ -51,27 +58,23 @@ body {
   color: white;
 }
 
-.sidebar h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
 .sidebar button {
+  display: block;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   width: 100%;
-  padding: 0px 12px;
-  border-radius: 0;
+  padding: 12px;
+  border-radius: 4px;
   border: 1px solid #ffffff;
   text-align: center;
-  background-repeat: no-repeat;
-  background-color: #333;
-  background-position: 95% center;
-  background-size: 10px;
+  background-color: #61A4C9;
   font-size: 0.9375em;
   cursor: pointer;
-  overflow: visible;
-  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #ddd;
 }
 
 /* Style the content area */
@@ -81,11 +84,15 @@ body {
 
 /* Style the header */
 header {
-  background-color: #333;
-  background-image: url(./images/background.jpg);
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   text-align: center;
   padding: 20px;
+}
+
+header .header-text {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -107,22 +114,26 @@ section h2 {
 
 /* Style the main-image details */
 .main-images {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-images img {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 /* Style the about details */
-.about {
+.main {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
 }
 
-.lorem {
+.deskripsi {
   text-align: justify;
+  line-height: 30px;
 }
 
 /* Style the room details */
@@ -138,28 +149,20 @@ section h2 {
 
 /* Style the footer as a horizontal grid with 3 columns */
 footer {
-  background-image: url(./images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-color: #333;
+  background-size: cover;
   color: #fff;
   text-align: center;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
-  
-  
-}
-
-footer .copy {
-  text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
 }
 
 /* Style each column in the footer */
 .footer-column {
-  padding: 0 10px; /* Adjust the padding as needed */
-  border-right: 1px solid #555; /* Add a border between columns */
-  
+  padding: 0 10px;
+  border-right: 1px solid #555;
 }
 
 /* Remove the border from the last column */

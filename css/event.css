@@ -1,0 +1,154 @@
+/* styles.css */
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-columns: "sidebar content";
+    grid-gap: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 180px;
+    grid-area: sidebar;
+    background-image: url(../images/navbar-background.png);
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+  
+.sidebar li {
+    margin-bottom: 10px;
+}
+  
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.sidebar li:hover {
+    background-color: #ddd;
+    color: white;
+}
+  
+.sidebar h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+  
+.sidebar button {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 0px 12px;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: #488BB1;
+    background-position: 100% center;
+    background-size: 10px;
+    font-size: 0.9375em;
+    cursor: pointer;
+    overflow: visible;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+#wedding {
+    text-align: right;
+}
+
+.wedding {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-gap: 56px 40px;
+    margin: 40px; */
+    padding: 0 4px;
+}
+
+.wedding figure {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    /* margin: 0;
+    overflow: hidden;
+    box-shadow: 0 0 8px rbga(0, 0, 0, 0.1); */
+}
+
+.wedding img {
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+    display: block;
+    transition: transform 0.2s;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding figure:hover img {
+    transform: scale(1.1)
+}
+
+img{
+    width: 100%;
+}
+
+footer {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+/* footer .copyright{
+    align-items: end;
+} */
+.footer-column {
+    padding: 0 10px; 
+    border-right: 1px solid #555; 
+}
+  
+.footer-column:last-child {
+    border-right: none;
+}
+
+
+
