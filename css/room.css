@@ -39,6 +39,11 @@
     padding: 20px;
     position: fixed;
   }
+
+  .sidebar .home {
+    text-align: center;
+    margin-bottom: 25px;
+  }
   
   .sidebar ul {
     list-style: none;
