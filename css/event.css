@@ -131,8 +131,7 @@ img{
 
 /* Style the footer as a horizontal grid with 3 columns */
 footer {
-    background-image: url(../images/background.jpg);
-    background-color: #333;
+    background-color: #1c3848;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -150,4 +149,22 @@ footer {
   /* Remove the border from the last column */
   .footer-column:last-child {
     border-right: none;
+  }
+  
+  .media-social a{
+    text-align: center;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    margin-inline: 10px;
+    color: #ffffff;
+  }
+  
+  media-social a ::before {
+    size: 40px;
+  }
+  
+  .alamat {
+    text-align: center;
+    margin-inline: 10px;
   }
