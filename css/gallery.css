@@ -422,6 +422,7 @@ body, h1, h2, p, ul, li {
     background-size: cover;
     color: #fff;
     text-align: center;
+    align-items: center;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
