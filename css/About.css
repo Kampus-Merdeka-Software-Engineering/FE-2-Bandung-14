@@ -17,14 +17,16 @@ body {
 h1 {
   font-family: 'Titillium Web', sans-serif;
   font-size: 30px;
+  font-weight: 900;
   text-align: center;
   padding-top: 90px;
   color: #000000;
 }
 
 .greeting {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Satisfy';
   font-size: medium;
+  font-weight: normal;
   color: black;
 }
 
