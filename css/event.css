@@ -29,18 +29,24 @@ body {
     position: fixed;
 }
 
-.sidebar ul {
-    list-style: none;
-}
-  
-.sidebar li {
-    margin-bottom: 10px;
-}
-  
+.sidebar .home {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
 .sidebar a {
     display: block;
     color: #fff;
     text-decoration: none;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+  
+.sidebar li {
+    margin-bottom: 10px;
 }
   
 .sidebar li:hover {
@@ -48,36 +54,33 @@ body {
     color: white;
 }
   
-.sidebar h1 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-  
 .sidebar button {
+    display: block;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    width: 80%;
-    padding: 0px 12px;
-    border-radius: 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
     border: 1px solid #ffffff;
     text-align: center;
-    background-repeat: no-repeat;
-    background-color: #488BB1;
-    background-position: 100% center;
-    background-size: 10px;
+    background-color: #61A4C9;
     font-size: 0.9375em;
     cursor: pointer;
-    overflow: visible;
-    margin-top: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+    transition: background-color 0.3s ease;
+  }
+
+.sidebar button:hover {
+    background-color: #ddd;
+  }
+
+.content {
+    grid-area: content;
+  }
 
 main {
-    margin-left: 20px;
-    padding: 20px;
+    margin-left: 10px;
+    padding: 10px;
 }
-
 
 .grid-container {
     display: grid;
@@ -126,29 +129,26 @@ img{
     width: 100%;
 }
 
+/* Style the footer as a horizontal grid with 3 columns */
 footer {
     background-image: url(../images/background.jpg);
-    background-size: cover;
     background-color: #333;
-    color: #ffffff;
+    background-size: cover;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    width:auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    width: auto;
-    height: auto;
-}
-/* footer .copyright{
-    align-items: end;
-} */
-.footer-column {
-    padding: 0 10px; 
-    border-right: 1px solid #555; 
-}
+  }
   
-.footer-column:last-child {
+  /* Style each column in the footer */
+  .footer-column {
+    padding: 0 10px;
+    border-right: 1px solid #555;
+  }
+  
+  /* Remove the border from the last column */
+  .footer-column:last-child {
     border-right: none;
-}
-
-
-
+  }
