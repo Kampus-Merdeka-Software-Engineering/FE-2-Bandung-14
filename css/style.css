@@ -169,7 +169,7 @@ footer {
   border-right: none;
 }
 
-.media-social a{
+.media-social a {
   text-align: center;
   font-size: 25px;
   width: 30px;
@@ -178,11 +178,23 @@ footer {
   color: #ffffff;
 }
 
-media-social a ::before {
-  size: 40px;
+/* Media query for tablets */
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "sidebar content";
+  }
 }
 
-.alamat {
-  text-align: center;
-  margin-inline: 10px;
+/* Media query for smartphones */
+@media screen and (max-width: 599px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
+
+  /* Hide the sidebar on smaller screens */
+  .sidebar {
+    display: none;
+  }
 }
