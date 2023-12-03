@@ -150,6 +150,7 @@ section h2 {
 footer {
   background-image: url(../images/background.jpg);
   background-color: #333;
+  background-size: cover;
   color: #fff;
   text-align: center;
   padding: 10px;
