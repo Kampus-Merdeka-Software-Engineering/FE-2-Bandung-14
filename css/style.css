@@ -131,8 +131,9 @@ section h2 {
   margin: 10px;
 }
 
-.lorem {
+.deskripsi {
   text-align: justify;
+  line-height: 30px;
 }
 
 /* Style the room details */
