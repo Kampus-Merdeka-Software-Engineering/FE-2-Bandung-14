@@ -155,12 +155,3 @@ body, h1, h2, p, ul, li {
     margin-inline: 10px;
     color: #ffffff;
   }
-  
-  media-social a ::before {
-    size: 40px;
-  }
-  
-  .alamat {
-    text-align: center;
-    margin-inline: 10px;
-  }
