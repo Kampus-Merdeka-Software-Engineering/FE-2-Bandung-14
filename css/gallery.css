@@ -418,6 +418,7 @@ body, h1, h2, p, ul, li {
 
   /* Style the footer as a horizontal grid with 3 columns */
   footer {
+<<<<<<< HEAD
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-color: #333;
@@ -428,15 +429,50 @@ body, h1, h2, p, ul, li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
+=======
+    background-color: #1c3848;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+>>>>>>> a0aba4178f6ad6813645f9170400d04d8afb8ecf
   }
   
   /* Style each column in the footer */
   .footer-column {
+<<<<<<< HEAD
     padding: 0 10px; /* Adjust the padding as needed */
     border-right: 1px solid #555; /* Add a border between columns */
+=======
+    padding: 0 10px;
+    border-right: 1px solid #555;
+>>>>>>> a0aba4178f6ad6813645f9170400d04d8afb8ecf
   }
   
   /* Remove the border from the last column */
   .footer-column:last-child {
     border-right: none;
+<<<<<<< HEAD
+=======
+  }
+  
+  .media-social a{
+    text-align: center;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    margin-inline: 10px;
+    color: #ffffff;
+  }
+  
+  media-social a ::before {
+    size: 40px;
+  }
+  
+  .alamat {
+    text-align: center;
+    margin-inline: 10px;
+>>>>>>> a0aba4178f6ad6813645f9170400d04d8afb8ecf
   }
