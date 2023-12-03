@@ -155,3 +155,24 @@ body, h1, h2, p, ul, li {
     margin-inline: 10px;
     color: #ffffff;
   }
+
+ /* Media query for tablets */
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+
+/* Media query for smartphones */
+@media screen and (max-width: 599px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
+
+  /* Hide the sidebar on smaller screens */
+  .sidebar {
+    display: none;
+  }
+}
