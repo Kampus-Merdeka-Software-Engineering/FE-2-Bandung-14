@@ -417,24 +417,41 @@ body, h1, h2, p, ul, li {
   }
 
   /* Style the footer as a horizontal grid with 3 columns */
-footer {
-  background-image: url(../images/background.jpg);
-  background-color: #333;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* Style each column in the footer */
-.footer-column {
-  padding: 0 10px;
-  border-right: 1px solid #555;
-}
-
-/* Remove the border from the last column */
-.footer-column:last-child {
-  border-right: none;
-}
+  footer {
+    background-color: #1c3848;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Style each column in the footer */
+  .footer-column {
+    padding: 0 10px;
+    border-right: 1px solid #555;
+  }
+  
+  /* Remove the border from the last column */
+  .footer-column:last-child {
+    border-right: none;
+  }
+  
+  .media-social a{
+    text-align: center;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    margin-inline: 10px;
+    color: #ffffff;
+  }
+  
+  media-social a ::before {
+    size: 40px;
+  }
+  
+  .alamat {
+    text-align: center;
+    margin-inline: 10px;
+  }
