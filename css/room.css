@@ -105,7 +105,10 @@
     margin-bottom: 15px;
   }
 
-
+  header h2 {
+    font-size: 22px;
+    font-weight: normal;
+  }
 
   /* ----- MAIN CONTENT -----*/
 
@@ -114,7 +117,7 @@
   .main-content {
     margin: 40px;
     display: grid;
-    grid-template-columns: 180px 180px 180px 90px 180px 180px 90px 180px;
+    grid-template-columns: 150px 150px 150px 75px 150px 150px 75px 150px;
     grid-template-rows: 185px 185px 185px 185px;
   }
 
@@ -149,22 +152,24 @@
     margin: 20px;
     grid-column: 5/8;
     grid-row: 1/5;
+    line-height: 20px;
   }
 
 
   .topright-content h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
   .midleft-content  h1{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .midleft-content {
     margin: 20px;
     grid-column: 1/4;
     grid-row: 1/5;
+    line-height: 20px;
   }
 
 
