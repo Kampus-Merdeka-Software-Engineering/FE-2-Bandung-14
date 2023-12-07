@@ -34,6 +34,10 @@ body {
     margin-bottom: 25px;
   }
 
+.sidebar h1 a{
+  display: inline-block;
+}
+
 .sidebar a {
     display: block;
     color: #fff;
