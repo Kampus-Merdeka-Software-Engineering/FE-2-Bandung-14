@@ -1,4 +1,5 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 /* Reset some default styles */
 body,
@@ -91,6 +92,7 @@ body {
 
 /* Style the main content sections */
 section {
+  font-family: Arvo;
   padding: 20px;
 }
 
@@ -183,7 +185,8 @@ footer {
 }
 
 .history-title {
-  font-size: 1.5rem;
+  font-family: Arvo;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
   color: #fff;
@@ -196,6 +199,7 @@ footer {
 }
 
 .order-box {
+  font-family: 'Times New Roman';
   display: flex;
   justify-content: center;
   align-items: center;
