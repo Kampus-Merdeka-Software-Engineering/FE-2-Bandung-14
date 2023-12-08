@@ -1,4 +1,6 @@
 /* styles.css */
+  @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
@@ -84,8 +86,9 @@ body {
 
 /* Style the header */
 header {
+  font-family: 'Arvo';
   background-color: #fff;
-  color: #333;
+  color: #383838;
   text-align: center;
   padding: 20px;
 }
@@ -102,6 +105,8 @@ header h1 {
 
 /* Style the main content sections */
 section {
+  font-family: 'Times New Roman';
+  font-size: 17px;
   background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
@@ -109,6 +114,8 @@ section {
 
 section h2 {
   font-size: 24px;
+  font-family: 'Arvo';
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
