@@ -1,4 +1,6 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
   margin: 0;
@@ -85,7 +87,8 @@ body {
 
 /* Style the header */
 .content h1{
-  font-size: 30px;
+  font-family: Arvo;
+  font-size: 35px;
   padding-top: 20px;
   margin-bottom: 15px;
   text-align: center;
@@ -93,39 +96,41 @@ body {
 }
 
 h2{
-  font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
   margin-bottom: 15px;
   text-align: center;
   color: #000;
 }
 
 h3{
+  font-family: Arvo;
   font-size: 25px;
   margin-bottom: 15px;
   padding-top: 50px;
   padding-left: 25px;
   text-align: left;
-  font-family: 'Satisfy';
   color: #000;
 }
 
 .EatandDrink h4{
+  font-family: Arvo;
   font-size: 25px;
   margin-bottom: 15px;
   padding-top: 50px;
   padding-right: 25px;
   text-align: right;
-  font-family: 'Satisfy';
   color: #000;
 }
 
 h5{
+  font-family: Arvo;
   font-size: 25px;
   margin-bottom: 15px;
   padding-top: 50px;
   padding-left: 25px;
   text-align: left;
-  font-family: 'Satisfy';
   color: #000;
 }
 
