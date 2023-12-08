@@ -1,4 +1,5 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 body, h1, h2, p, ul, li {
     margin: 0;
@@ -131,6 +132,18 @@ main {
 
 img{
     width: 100%;
+}
+
+.content h1 {
+  font-family: Arvo;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.content p {
+  font-family: 'Times New Roman';
+  font-size: 17px;
+  line-height: 25px;
 }
 
 /* Style the footer as a horizontal grid with 3 columns */
