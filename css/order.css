@@ -121,8 +121,8 @@ header h1 {
 .main-content {
   display: grid;
   grid-area: main-content;
-  grid-template-rows:     180px 180px 180px 180px 180px;
-  grid-template-columns:  180px 180px 180px 180px 180px 180px 180px 180px;
+  grid-template-rows:     140px 140px 140px 140px 140px;
+  grid-template-columns:  140px 140px 140px 140px 140px 140px 140px 140px;
   margin-top: 30px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -202,7 +202,7 @@ header h1 {
 .user-input-mid4 {
   grid-column: 6/8;
   grid-row: 4/5;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 0px 20px;
   background-color: #ececec;
 }
 
@@ -229,7 +229,6 @@ header h1 {
   padding-right: 20px;
 }
 
-
 .label-check {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: large;
@@ -240,8 +239,6 @@ header h1 {
   grid-column: 5/6;
   grid-row: 1/2;
 }
-
-
 
 .check-in{
   
@@ -258,9 +255,6 @@ header h1 {
   padding-bottom: 5px;
 }
 
-
-
-
 .check-out-box {
   border-radius: 0%;
   border-width: 1px;
@@ -271,7 +265,7 @@ header h1 {
 
 
 .adults {
-  margin-top: 50px;
+  margin-top: 20px;
   
   grid-column: 5 / 6;
   grid-row: 2 / 3;
@@ -286,11 +280,10 @@ header h1 {
 }
 
 .childrens {
-  padding-top: 50px;
+  padding-top: 20px;
   grid-column: 6 / 7;
   grid-row: 2 / 3;
 }
-
 
 .room {
   grid-row: 3 / 4;
@@ -310,41 +303,21 @@ header h1 {
 }
 
 .address {
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
 .bukti-tf {
   padding-top: 20px;
 }
 
-.bukti-tf p {
-  padding-bottom: 2px;
-}
-
-.bukti-tf-btn {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-color: #488BB1;
-  border-radius: 5px;
-  box-shadow: none;
-  border-width: 2px;
-  
-}
-
-.bukti-tf-btn:hover {
-  color: #ffffff;
-  background-color: #488BB1;
-}
-
 .desc {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
-  font-size: small;
-  grid-column: 2/5;
+  font-size: medium;
+  grid-column: 2/6;
   grid-row: 4/5;
   padding: 20px;
+  line-height: 25px;
 }
 
 
