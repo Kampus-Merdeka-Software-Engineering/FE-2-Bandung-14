@@ -1,4 +1,5 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
@@ -90,12 +91,19 @@ body, h1, h2, p, ul, li {
   }
   
   section h2 {
-    font-size: 24px;
+    font-family: Arvo;
+    font-size: 30px;
     margin-bottom: 10px;
+  }
+
+  section h3 {
+    font-family: Arial-sans-serif;
   }
 
   /* Style the about details */
   .about {
+    font-family: Arial, sans-serif;
+    line-height: 30px;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
@@ -103,11 +111,14 @@ body, h1, h2, p, ul, li {
 
   .lorem {
     margin-top: 20px;
+    line-height: 23px;
     text-align: justify;
   }
   
   /* Style the breakfast details */
   .breakfast {
+    font-family: Arial, sans-serif;
+    line-height: 25px;
     display: flex;
     align-items: center;
     text-align: justify;
