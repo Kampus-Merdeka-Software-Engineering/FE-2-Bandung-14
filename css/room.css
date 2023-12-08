@@ -1,8 +1,4 @@
-@font-face {
-    font-family: Broken\ Knight\ DEMO;
-    src: url(./Fonts/Broken\ Knight\ DEMO.ttf);
-  }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
   
   /* Reset some default styles */
   body, h1, h2, p, ul, li {
@@ -93,20 +89,20 @@
   /* Style the header */
   header {
     margin-left: 60px;
-    font-family: Broken\ Knight\ DEMO;
-    
     color: rgb(5, 5, 5)000;
     text-align: left;
     padding-top: 50px;
   }
   
   header h1 {
-    font-size: 40px;
+    font-size: 35px;
+    font-family: Arvo;
     margin-bottom: 15px;
   }
 
   header h2 {
-    font-size: 22px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
     font-weight: normal;
   }
 
@@ -115,6 +111,7 @@
 
 
   .main-content {
+    font-family: Arial, sans-serif;
     margin: 40px;
     display: grid;
     grid-template-columns: 150px 150px 150px 75px 150px 150px 75px 150px;
