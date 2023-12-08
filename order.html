@@ -14,11 +14,7 @@
         <!-- Navbar -->
         <nav class="sidebar">
             <div class="home">
-                <h1>
-                  <a href="index.html">
-                    <img height="120" src="./images/Logo1.png" width="120" alt="" class="logo">
-                  </a>
-                </h1>
+                <h1><a href="index.html">LuxeLeaf Glampsite</a></h1>
             </div>
             <ul>
                 <li><a href="room page.html">Rooms</a></li>
@@ -27,7 +23,6 @@
                 <li><a href="Event.html">Events</a></li>
                 <li><a href="contactUs.html" target="_blank">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="history.html">History</a></li>
             </ul>
             <button><a href="order.html">Order</a></button>
         </nav>
@@ -43,39 +38,36 @@
 
             <!-- Main content -->
             
-            <div class="main-content">
+            <form class="main-content" id="order-form">
                     
                     <div class="img">
-                        <img src="./images/li-yang-hpncxymfyzw-unsplash-befb0c768d156354a16684eef4df3b02_600x400.jpg" alt="" id="chosenRoom">
-                        
+                        <img src="./images/li-yang-hpncxymfyzw-unsplash-befb0c768d156354a16684eef4df3b02_600x400.jpg" alt="" id="chosenRoom">    
                     </div>
         
                     <div class="user-input-mid1">
-                            <label for="" class="label-check">CHECK AVAILABILITY</label>
-                            
-                            <div class="first-name">
-                                <p>FIRST NAME</p>
-                                <input type="text" class="check-in-box">
-                            </div>
-
-                            
-                                
-                            
+                        <label class="label-check">CHECK AVAILABILITY</label>
+                        <div class="first-name">
+                            <p>FIRST NAME</p>
+                            <input type="text" id="firstName" name="first_name" class="check-in-box">
+                        </div>   
                     </div>
 
                     <div class="user-input-mid2">
                         <div class="check-in">
                             <p>CHECK IN</p>
-                            <input type="date" class="check-in-box">
+                            <input type="date" name="check_in" class="check-in-box">
                         </div>
 
                         <div class="adults">
                             <p>ADULTS</p>
-                            <select name="" id="" class="adults-box">ADULTS(s)
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                            <select name="adults" id="" class="adults-box" name="adults" required>ADULTS(s)
+                                <% options. Each(option => { %>
+                                <option value="">NONE</option>
+                                <option value="<%= option.1 %>">1</option>
+                                <option value="<%= option.2 %>">2</option>
+                                <option value="<%= option.3 %>">3</option>
+                                <option value="<%= option.4 %>">4</option>
+                                <% }); %>
                             </select>
                         </div>
                         
@@ -85,14 +77,14 @@
                         <div class="room">
                             <p>ROOM</p>
 
-                            <input type="radio" class="room-btn" name="room"></input>
-                            <label for="">Standard Room</label>
+                            <input type="radio" class="room-btn" name="room" value="Option 1"></input>
+                            <label>Standard Room</label>
                             <br>
-                            <input type="radio" class="room-btn" name="room"></input>
-                            <label for="">Deluxe Room</label>
+                            <input type="radio" class="room-btn" name="room" value="Option 2"></input>
+                            <label>Deluxe Room</label>
                             <br>
-                            <input type="radio" class="room-btn" name="room"></input>
-                            <label for="">Executive Suite</label>
+                            <input type="radio" class="room-btn" name="room" value="Option 3"></input>
+                            <label>Executive Suite</label>
                             <!-- <p>ROOM</p>
                             <select name="" id="" class="room-box" id="roomSelect">
                                 <option value="1">Lorem</option>
@@ -105,14 +97,14 @@
 
                         <div class="address">
                             <p>ADDRESS</p>
-                            <input type="text" class="check-in-box">
+                            <input type="text" name="address" class="check-in-box" required>
                         </div>
                     </div>
 
                     <div class="user-input-mid4">
                         <div class="phone">
                             <p>MOBILE NUMBER</p>
-                            <input type="text" class="check-in-box">
+                            <input type="text" name="mobile_number" class="check-in-box" required>
                         </div>
 
                         <div class="bukti-tf">
@@ -122,7 +114,7 @@
                     </div>
 
                     <div class="background-mid1">
-                        <button class="order-btn">ORDER</button>
+                        <button class="order-btn" type="submit">ORDER</button>
                         <h3>LOREM IPSUM</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur ab velit fugit possimus excepturi itaque officiis harum maxime adipisci</p>
                     </div>
@@ -131,24 +123,26 @@
                     <div class="user-input-right1">
                         <div class="last-name">
                             <p>LAST NAME</p>
-                            <input type="text" class="check-in-box">
+                            <input type="text" class="check-in-box" name="last_name" required>
                         </div>
                     </div>
 
                     <div class="user-input-right2">
                         <div class="check-out">
                             <p>CHECK OUT</p>
-                            <input type="date" class="check-out-box">
+                            <input type="date" class="check-out-box" name="check_out" required>
                         </div>
 
                         <div class="childrens">
                             <p>CHILDRENS</p>
-                            <select name="" id="" class="adults-box">ADULTS(s)
-                                <option value="0">NONE</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                            <select name="childrens" id="" class="adults-box" name="childrens">
+                                <% options. Each(option => { %>
+                                <option value="">NONE</option>
+                                <option value="<%= option.1 %>">1</option>
+                                <option value="<%= option.2 %>">2</option>
+                                <option value="<%= option.3 %>">3</option>
+                                <option value="<%= option.4 %>">4</option>
+                                <% }); %>
                             </select>
 
                             
@@ -162,7 +156,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur ab velit fugit possimus excepturi itaque officiis harum maxime adipisci. Animi veniam non rerum, sunt voluptatibus vero eum nostrum consequuntur. Beatae, veniam ad recusandae non id illum accusantium consequuntur unde deserunt facilis, dicta corrupti iusto sit numquam fugiat velit? Modi!</p>
                     </div>  
                      
-            </div>
+            </form>
 
             <!-- Footer -->
             <footer>
@@ -195,6 +189,6 @@
     </section>
 
 
-    <script src="order.js"></script>
+    <script src="../be/app.js"></script>
 </body>
 </html>
