@@ -31,3 +31,43 @@ function submitForm(button) {
         // Handle errors
     });
 }
+
+
+
+// GET Data for History
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch data from the /all endpoint when the page loads
+    fetch("https://quaint-bikini-calf.cyclic.app/all")
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Display the customer data in the container
+          displayCustomerData(data.data);
+        } else {
+          console.error("Error fetching customer data:", data.error);
+        }
+      })
+      .catch(error => console.error("Error fetching customer data:", error));
+  
+    // Function to display customer data
+    function displayCustomerData(customers) {
+      const container = document.getElementsByClassName("order-box");
+  
+      // Clear existing content
+      container.innerHTML = "";
+  
+      // Iterate through each customer and display relevant information
+      customers.forEach(customer => {
+        const customerElement = document.createElement("div");
+        customerElement.innerHTML = `
+          <p>ID: ${customer.id}</p>
+          <p>Name: ${customer.first_name} ${customer.last_name}</p>
+          <p>Check-in: ${customer.check_in}</p>
+          <p>Check-out: ${customer.check_out}</p>
+          <!-- Add other customer information as needed -->
+          <hr>
+        `;
+        container.appendChild(customerElement);
+      });
+    }
+  });
