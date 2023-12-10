@@ -169,6 +169,7 @@ header h1 {
 }
 
 .order-btn {
+  display: block;
   border-radius: 0%;
   border-width: 0;
   width: 100%;
