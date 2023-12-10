@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -100,7 +105,7 @@ section h2 {
 .about {
   border: 1px solid #ccc;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
 }
 
 .lorem {
@@ -180,9 +185,9 @@ footer {
 }
 
 .history-title {
-  font-family: 'Times Now Roman';
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-family: Arvo;
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: #fff;
   background-color: #356b87;
@@ -196,13 +201,23 @@ footer {
 .order-box {
   font-family: 'Times New Roman';
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  align-items: flex-start;
+  padding: 2rem;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   width: 70%;
-  height: 305px;
+  overflow: auto;
+  height: 500px;
+  flex-direction: column;
+}
+
+.customer-info {
+  margin: 5px 0;
+  font-size: 16px;
+  /* Add other styles as needed */
+}
+
+.customer-info.hr {
+  border: 1px solid #ccc;
 }
