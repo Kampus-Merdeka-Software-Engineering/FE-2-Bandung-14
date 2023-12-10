@@ -39,11 +39,8 @@
                 <h1>ORDER</h1>
             </header>
             
-
             <!-- Main content -->
-            
             <form class="main-content" id="order-form">
-                    
                     <div class="img">
                         <img src="./images/li-yang-hpncxymfyzw-unsplash-befb0c768d156354a16684eef4df3b02_600x400.jpg" alt="" id="chosenRoom">    
                     </div>
@@ -65,13 +62,13 @@
                         <div class="adults">
                             <p>ADULTS</p>
                             <select name="adults" id="" class="adults-box" name="adults" required>ADULTS(s)
-                                <% options. Each(option => { %>
-                                <option value="">NONE</option>
-                                <option value="<%= option.1 %>">1</option>
-                                <option value="<%= option.2 %>">2</option>
-                                <option value="<%= option.3 %>">3</option>
-                                <option value="<%= option.4 %>">4</option>
-                                <% }); %>
+                               
+                                <option value="0">NONE</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
                             </select>
                         </div>
                         
@@ -80,14 +77,13 @@
                     <div class="user-input-mid3">
                         <div class="room">
                             <p>ROOM</p>
-
-                            <input type="radio" class="room-btn" name="room" value="Option 1"></input>
+                            <input type="radio" class="room-btn" name="room" value="Standard"></input>
                             <label>Standard Room</label>
                             <br>
-                            <input type="radio" class="room-btn" name="room" value="Option 2"></input>
+                            <input type="radio" class="room-btn" name="room" value="Deluxe"></input>
                             <label>Deluxe Room</label>
                             <br>
-                            <input type="radio" class="room-btn" name="room" value="Option 3"></input>
+                            <input type="radio" class="room-btn" name="room" value="Executive"></input>
                             <label>Executive Suite</label>
                             <!-- <p>ROOM</p>
                             <select name="" id="" class="room-box" id="roomSelect">
@@ -114,7 +110,7 @@
                     </div>
 
                     <div class="background-mid1">
-                        <button class="order-btn">ORDER</button>
+                        <button onclick="submitForm(event)" class="order-btn">ORDER</button>
                         <h3> </h3>
                         <p>Order Your Seaside Escape: Where Waves Meet Wonders! Reserve Your Slice of Paradise at Beach Glamping – Your Passport to Coastal Bliss.</p>
                     </div>
@@ -136,13 +132,13 @@
                         <div class="childrens">
                             <p>CHILDRENS</p>
                             <select name="childrens" id="" class="adults-box" name="childrens">
-                                <% options. Each(option => { %>
-                                <option value="">NONE</option>
-                                <option value="<%= option.1 %>">1</option>
-                                <option value="<%= option.2 %>">2</option>
-                                <option value="<%= option.3 %>">3</option>
-                                <option value="<%= option.4 %>">4</option>
-                                <% }); %>
+                          
+                                <option value="0">NONE</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                
                             </select>
 
                             
@@ -183,12 +179,8 @@
                 </div>
             </footer>
         </div>
-        
-        
-        
     </section>
-
-
     <script src="../be/app.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
