@@ -34,6 +34,8 @@ function submitForm(button) {
 
 
 
+
+
 // GET Data for History
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch data from the /all endpoint when the page loads
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
         if (data.success) {
           // Display the customer data in the container
-    
+          console.log(data)
           displayCustomerData(data.data);
         } else {
           console.error("Error fetching customer data:", data.error);
@@ -52,14 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Function to display customer data
     function displayCustomerData(customers) {
-      const container = document.querySelector(".order-box");
+      const container = document.getElementByClassName("order-box");
+      
 
-    // Check if the container element exists
+      // Check if the container element exists
       if (!container) {
         console.error("Container element not found.");
         return;
       }
-        
+      
       // Clear existing content
       container.innerHTML = "";
   
@@ -71,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <p>Name: ${customer.first_name} ${customer.last_name}</p>
           <p>Check-in: ${customer.check_in}</p>
           <p>Check-out: ${customer.check_out}</p>
+          <hr>
         `;
         container.appendChild(customerElement);
       });
