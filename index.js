@@ -65,17 +65,23 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // Clear existing content
       container.innerHTML = "";
-  
+      
       // Iterate through each customer and display relevant information
       customers.forEach(customer => {
+
+        const checkInDate = new Date(customer.check_in).toLocaleDateString();
+        const checkOutDate = new Date(customer.check_out).toLocaleDateString();
+
         const customerElement = document.createElement("div");
         customerElement.innerHTML = `
-          <p>ID: ${customer.id}</p>
-          <p>Name: ${customer.first_name} ${customer.last_name}</p>
-          <p>Check-in: ${customer.check_in}</p>
-          <p>Check-out: ${customer.check_out}</p>
-          <hr>
+          <p class="customer-info">ID: ${customer.id}</p>
+          <p class="customer-info">Name: ${customer.first_name} ${customer.last_name}</p>
+          <p class="customer-info">Check-in: ${checkInDate}</p>
+          <p class="customer-info">Check-out: ${checkOutDate}</p>
+          <hr class="customer-info">
         `;
+        // Add a class to the container to style it if needed
+        container.classList.add("customer-container");
         container.appendChild(customerElement);
       });
     }
