@@ -64,8 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
           <p>Name: ${customer.first_name} ${customer.last_name}</p>
           <p>Check-in: ${customer.check_in}</p>
           <p>Check-out: ${customer.check_out}</p>
-          <!-- Add other customer information as needed -->
-          <hr>
         `;
         container.appendChild(customerElement);
       });
