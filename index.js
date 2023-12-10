@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Function to display customer data
     function displayCustomerData(customers) {
-      const container = document.getElementByClassName("order-box");
+      const container = document.querySelector(".order-box");
       
 
       // Check if the container element exists
