@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
         if (data.success) {
           // Display the customer data in the container
+    
           displayCustomerData(data.data);
         } else {
           console.error("Error fetching customer data:", data.error);
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Function to display customer data
     function displayCustomerData(customers) {
-      const container = document.getElementsByClassName("order-box");
+      const container = document.querySelector(".order-box");
 
     // Check if the container element exists
       if (!container) {
