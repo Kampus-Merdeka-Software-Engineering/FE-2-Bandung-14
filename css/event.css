@@ -130,6 +130,21 @@ main {
     transform: scale(1.1)
 }
 
+.package{
+  text-align: justify;
+  margin: auto;
+}
+
+.gathering{
+  text-align: justify;
+  margin: auto;
+}
+
+.birthday{
+  text-align: justify;
+  margin: auto;
+}
+
 img{
     width: 100%;
 }
